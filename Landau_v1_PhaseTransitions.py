@@ -10,9 +10,9 @@ from pathlib import Path
 import numpy as np
 
 
-DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv"
+DEFAULT = "/data/loto7_4698_k80.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_2971.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_plus_1727.csv"
 
 
 N, K, START = 39, 7, 32
@@ -325,42 +325,42 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; broj redova=4698
+Ulaz: /data/loto7_4698_k80.csv; broj redova=4698
 Poslednji red: 4,12,18,28,35,36,37
 Validacija: redovi 4587..4634; alpha=100; beta=0.25; prosek=1.2083
 Test: redovi 4635..4698; svaki cilj otkriven tek posle predikcije.
 Landau v1: prosek=1.2188; pogodaka 0..7=[15, 26, 17, 6, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Medijana rasporeda: prosek=1.1406; pogodaka 0..7=[16, 26, 19, 3, 0, 0, 0, 0]
-SLEDECI RED 4699: 5,9,14,19,24,29,34
+SLEDECI RED 4699: 5,x,14,y,24,z,34
 Potencijal V=0.12490930 (skor rangiranja, nije verovatnoca).
 
 
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; broj redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; broj redova=2971
 Poslednji red: 18,20,21,24,29,34,38
 Validacija: redovi 2860..2907; alpha=100; beta=0.25; prosek=1.4375
 Test: redovi 2908..2971; svaki cilj otkriven tek posle predikcije.
 Landau v1: prosek=1.2188; pogodaka 0..7=[13, 27, 21, 3, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Medijana rasporeda: prosek=1.0938; pogodaka 0..7=[16, 31, 13, 3, 1, 0, 0, 0]
-SLEDECI RED 2972: 5,10,15,20,24,30,35
+SLEDECI RED 2972: 5,x,15,y,24,z,35
 Potencijal V=0.16613519 (skor rangiranja, nije verovatnoca).
 
 
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; broj redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; broj redova=1727
 Poslednji red: 4,12,18,28,35,36,37
 Validacija: redovi 1616..1663; alpha=10; beta=0.25; prosek=1.3542
 Test: redovi 1664..1727; svaki cilj otkriven tek posle predikcije.
 Landau v1: prosek=1.3281; pogodaka 0..7=[11, 25, 25, 2, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Medijana rasporeda: prosek=1.3750; pogodaka 0..7=[10, 27, 21, 5, 1, 0, 0, 0]
-SLEDECI RED 1728: 4,10,15,19,25,30,34
+SLEDECI RED 1728: 4,x,15,y,25,z,34
 Potencijal V=0.15425578 (skor rangiranja, nije verovatnoca).
 """
 
