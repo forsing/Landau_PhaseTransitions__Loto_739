@@ -11,9 +11,9 @@ from scipy.spatial import cKDTree
 
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 
@@ -583,7 +583,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -596,13 +596,13 @@ Test: redovi 4635..4698
 LANDAU V1: prosek=1.3594; pogodaka 0..7=[14, 23, 18, 8, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 1,21,22,23,24,25,38
+SLEDECI RED 4699: 1,x,22,y,24,z,38
 V=-1.8913879949; iteracija=17
 Potencijal rangira cele kombinacije u empirijskom podrucju. Globalni minimum nije potvrden.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -615,13 +615,13 @@ Test: redovi 2908..2971
 LANDAU V1: prosek=1.4375; pogodaka 0..7=[10, 28, 16, 8, 2, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 1,20,25,31,32,33,39
+SLEDECI RED 2972: 1,x,25,y,32,z,39
 V=-3.2802889897; iteracija=14
 Potencijal rangira cele kombinacije u empirijskom podrucju. Globalni minimum nije potvrden.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -634,7 +634,7 @@ Test: redovi 1664..1727
 LANDAU V1: prosek=1.3438; pogodaka 0..7=[13, 24, 19, 8, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 1,19,20,21,25,27,38
+SLEDECI RED 1728: 1,x,20,y,25,z,38
 V=-0.8654296590; iteracija=19
 Potencijal rangira cele kombinacije u empirijskom podrucju. Globalni minimum nije potvrden.
 """
@@ -652,9 +652,9 @@ Referenca je prethodna stvarna konfiguracija; uklonjeno je predviđanje prosečn
 Potencijal se koristi u području pokrivenom stvarnim istorijskim konfiguracijama.
 
 Fajl	    Sledeći red	   Predlog	            Prosek na 64 test-kola
-Objedinjeni	4699	       1,21,22,23,24,25,38	1,3594
-Loto	    2972	       1,20,25,31,32,33,39	1,4375
-Loto Plus	1728	       1,19,20,21,25,27,38	1,3438
+Objedinjeni	4699	       1,x,22,y,24,z,38	    1,3594
+Loto	    2972	       1,x,25,y,32,z,39	    1,4375
+Loto Plus	1728	       1,x,20,y,25,z,38	    1,3438
 
 Provereni su izolacija budućih redova, ponovljivost i ograničenja pretrage. 
 Globalni optimum nije dokazan.
